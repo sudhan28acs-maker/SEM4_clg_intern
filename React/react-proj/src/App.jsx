@@ -1,5 +1,7 @@
 import Home from "./Home";
-
+import Counter from "./Hooks/UseState/Counter";
+import Score from "./Hooks/UseState/Score";
+import Run from "./Hooks/UseState/Run";
 
 function Data(props) {
   return (
@@ -42,14 +44,16 @@ function App() {
 ]
   return (
     <div>
-      <h1>This is the App Component</h1>
-      <h2>JS File</h2>
-      <Home />
-      <Data obj="SECE College" />
+      <h1>Cricket Score Board</h1>
+      <Counter /><Data obj="INDIA" />
       <Players obj1={players_data} />
+      <Run />
+      <Score />
     </div>
   );
 }
+
+
 
 
 

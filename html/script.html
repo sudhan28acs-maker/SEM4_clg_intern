@@ -44,6 +44,51 @@
         greet("Sudhan");
 
 
+        // object
+
+        let emp =[
+            {emp_id:101,
+            emp_name:"Sudhan",
+            emp_salary:25000,
+            skills:["HTML","CSS","JS"]
+            },
+
+            {
+                emp_id:102,
+                emp_name:"Priya",
+                emp_salary:30000,
+                company:{
+                    c1:"TCS",
+                    cdata:{
+                        h:100,
+                    },
+                    c2:"Accenture"
+                }
+            },
+        ]
+
+        console.log(emp[0].skills[1]);
+        console.log(emp[1].company.c2);
+        console.log(emp[0].emp_id);
+        console.log(emp[1].company.cdata.h);
+        
+
+        let stringify = JSON.stringify(emp);
+        console.log(stringify);
+
+        let parse = JSON.parse(stringify);
+        console.log(parse);
+
+        //shollow copy and deep copy
+
+        let copied_data = emp;
+        copied_data.salary = 80000;
+        console.log("Original data:", emp);
+        console.log("Copied data:", copied_data);
+
+        console.log("Original data salary:", emp[0].emp_salary);
+
+
     </script>
 </body>
-</html>
+</html> 
