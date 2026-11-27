@@ -1,11 +1,14 @@
 import React from "react";
 import Electronics from "./Electronics";
 
-function Flipkart() {
+function Flipkart({mobile}) {
+
+    console.log(mobile);
     return (
         <div>
             <h2>Flipkart Component</h2>
-            <Electronics/>
+            {/*<p>{mobile}</p>*/}
+            <Electronics mobile={mobile}/>
         </div>
     );
 }

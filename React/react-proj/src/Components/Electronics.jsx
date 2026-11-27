@@ -1,11 +1,12 @@
 import React from "react";
 import Mobile from "./Mobile";
 
-function Electronics() {
+function Electronics({mobile}) {
+    console.log(mobile);
     return (
         <div>
             <h2>Electronics Component</h2>
-            <Mobile/>
+            <Mobile mobile={mobile}/>
         </div>
     );
 }
